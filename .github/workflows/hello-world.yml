@@ -1,0 +1,15 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  ci-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build Step 
+      run: echo "Build Step"
+    - name: Test Step 
+      run: echo "Test Step"
+    - name: Artifact Step 
+      run: echo "Artifact Step"
+    - name: Docker Step 
+      run: echo "Docker Step"
