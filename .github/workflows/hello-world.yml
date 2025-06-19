@@ -5,6 +5,8 @@ jobs:
   ci-pipeline:
     runs-on: ubuntu-latest
     steps:
+    - name: Code Checkout
+      uses: actions/checkout@v4
     - name: Build Step 
       run: echo "Build Step"
     - name: Test Step 
